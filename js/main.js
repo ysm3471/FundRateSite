@@ -206,17 +206,17 @@ function makeList(listInfo) {
 
   if (bookmarkList.includes(listInfo.code)) {   // 지금 만드는 list가 북마크에 저장한 list일 경우 클라스를 추가함
     starWrap.classList.add('checked');
-    star.setAttribute('src',"../img/Star-checked.png");
+    star.setAttribute('src',"img/Star-checked.png");
   }
 
   starWrap.addEventListener("click",() => {   // 즐겨찾기 버튼을 누르면 체크해주고 그 정보를 스토리지에 저장함
     if (starWrap.classList.contains('checked')){
-      star.setAttribute('src',"../img/Star-default.png");
+      star.setAttribute('src',"img/Star-default.png");
       starWrap.classList.remove('checked');
       bookmarkList = bookmarkList.filter((aa)=> aa!==listInfo.code)   // 북마크를 해제할 때 북마크리스트의 정보도 갱신함
     }
     else {
-      star.setAttribute('src',"../img/Star-checked.png");
+      star.setAttribute('src',"img/Star-checked.png");
       starWrap.classList.add("checked");     
       bookmarkList.push(listInfo.code); 
     }
@@ -290,12 +290,12 @@ next.addEventListener('click', () => {   // 다음 페이지로 이동하는 버
 // 즐겨찾기 기능
 bookmarkBtn.addEventListener('click',(e)=>{
   if (bookmarkBtn.classList.contains('checked')){
-    e.target.setAttribute('src',"../img/Star-default.png");
+    e.target.setAttribute('src',"img/Star-default.png");
     bookmarkBtn.classList.remove('checked');
     hideBookmark();
   }
   else {
-    e.target.setAttribute('src',"../img/Star-checked.png");
+    e.target.setAttribute('src',"img/Star-checked.png");
     bookmarkBtn.classList.add("checked");     
     showBookmark();
   }
