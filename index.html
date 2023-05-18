@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="shortcut icon" href="#">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer type="module" src="js/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>국제 통화 검색 사이트</h1>
+    </header>
+    <main>
+      <div class="main_top">
+        <div class="search_bar">
+          <input type="text" placeholder="통화 또는 국가 검색">
+          <div class="button">검색</div>
+        </div>        
+        <div class="date">
+        </div>
+      </div>
+      <div class="table_wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <div class="star_img">
+                  <img src="img/Star-default.png" alt="">
+                </div>
+                국가 / 통화이름
+              </th>
+              <th>통화가격(원화기준)</th>
+              <th>변동률</th>
+              <th>통화가격(달러기준)</th>
+              <th>통화코드</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>  
+        <div class="paging">
+          <a href="#" class="go-first">&#60&#60</a>
+          <a href="#" class="prev">&#60</a>
+          <a href="#" class="next">&#62</a>
+          <a href="#" class="go-last">&#62&#62</a>
+        </div>
+        <div class="caution">
+          <p>*금일 환율은 오전 11시 이후로 갱신됨</p>
+          <p>*주말과 공휴일을 제외한 정보임</p>
+        </div>      
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body {
+  font-family:'Noto Sans KR',Arial, Helvetica, sans-serif;
+  font-weight:400;
+  padding-top:80px;
+  color:#333;
+}
+a {
+  color:inherit;
+}
+.container {
+  max-width:980px;
+  min-width:630px;
+  height:740px;
+  margin:auto;
+}
+header {
+  text-align:center;
+}
+header h1 {
+  padding:10px 40px;
+  font-size:32px;
+  font-weight:500;
+  background:#d4e4fc;
+  display:inline-block;
+  border-radius:5px;
+}
+main {
+  width:100%;
+}
+.main_top {
+  margin-top:83px;
+  padding:0 10px;
+}
+.main_top::after {
+  display:block;
+  content:"";
+  clear:both;
+}
+.search_bar {
+  width:100%;
+  margin-bottom:10px;
+}
+.search_bar input {
+  width:260px;
+  height:29px;
+  padding:0 5px;
+  border:1px solid #423F3F;
+  border-right:none;
+  border-bottom-left-radius:5px;
+  border-top-left-radius:5px;
+  float:left;
+  box-sizing:border-box;
+}
+.search_bar input:focus {
+  outline:none;
+}
+.search_bar .button {
+  display:inline-block;
+  line-height:17px;
+  border:1px solid #423F3F;
+  border-left:none;
+  border-bottom-right-radius:5px;
+  border-top-right-radius:5px;
+  font-size:17px;
+  color:#fff;
+  padding:5px 15px;
+  height:29px;
+  background:#696969;
+}
+.date {
+  float:right;
+  font-size:15px;
+  color:#3D3C3C;
+}
+.table_wrap {
+  margin-top:10px;
+  padding:20px;  
+  background:#FCFCFC;
+  height:600px;
+  position:relative;
+}
+
+table {
+  width:100%;
+}
+thead tr {
+  border-bottom:1px solid #6F6B6B;
+}
+thead th {
+  padding:16px 0;
+}
+thead::after {    /* table-cell에서 thead와 tbody사이에 간격을 주는 방법 */
+  display:block;
+  content:"";
+  height:10px;
+}
+tr td {
+  padding:16px 10px;
+  border-bottom:1px solid #C6BCBC;
+  font-size:17px;
+  line-height:19px;
+}
+.flag_img {
+  float:left;
+  width:21px;
+  margin-right:10px;
+}
+.flag_img img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  vertical-align:middle;
+}
+tbody td:not(:first-child) {
+  text-align:center;
+}
+.caution {
+  position:absolute;
+  bottom:-18px;
+  right:0;
+}
+.caution p {
+  display: inline-block;
+  margin-right:10px;
+  font-size:12px;
+}
+.paging {
+  position:absolute;
+  bottom:10px;
+  left:48%;
+  transform:translateX(-50%);
+}
+.paging a {
+  margin-right:5px;
+}
+.paging a.focus {
+  font-weight:bold;
+  font-size:17px;
+}

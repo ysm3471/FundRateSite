@@ -1,0 +1,165 @@
+{
+  "data":[
+    {
+      "country":"아랍에미리트 / 디르함",
+      "flag":"img/United_Arab_Emirates.jpg",
+      "price":1,
+      "code":"AED",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_AEDKRW"
+    },
+    {
+      "country":"호주/ 호주 달러",
+      "flag":"img/Australia.jpg",
+      "price":1,
+      "code":"AUD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_AUDKRW"
+    },
+    {
+      "country":"바레인 / 디나르",
+      "flag":"img/Bahrain.jpg",
+      "price":1,
+      "code":"BHD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_BHDKRW"
+    },
+    {
+      "country":"브루나이 / 브루나이 달러",
+      "flag":"img/Brunei_Darussalam.jpg",
+      "price":1,
+      "code":"BND",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_BNDKRW"
+    },
+    {
+      "country":"캐나다 / 캐나다 달러",
+      "flag":"img/Canada.jpg",
+      "price":1,
+      "code":"CAD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_CADKRW"
+    },
+    {
+      "country":"스위스 / 프랑",
+      "flag":"img/Swiss.jpg",
+      "price":1,
+      "code":"CHF",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_CHFKRW"
+    },
+    {
+      "country":"중국 / 위안화",
+      "flag":"img/China.jpg",
+      "price":1,
+      "code":"CNH",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_CNYKRW"
+    },
+    {
+      "country":"덴마크 / 크로네",
+      "flag":"img/Denmark.jpg",
+      "price":1,
+      "code":"DKK",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_DKKKRW"
+    },
+    {
+      "country":"EU / 유로",
+      "flag":"img/EU.png",
+      "price":1,
+      "code":"EUR",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_EURKRW"
+    },
+    {
+      "country":"영국 / 파운드",
+      "flag":"img/England.jpg",
+      "price":1,
+      "code":"GBP",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_GBPKRW"
+    },
+    {
+      "country":"홍콩 / 홍콩 달러",
+      "flag":"img/Hongkong.png",
+      "price":1,
+      "code":"HKD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_HKDKRW"
+    },
+    {
+      "country":"인도네시아 / 루피아",
+      "flag":"img/Indonesia.jpg",
+      "price":1,
+      "code":"IDR(100)",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_IDRKRW"
+    },
+    {
+      "country":"일본 / 엔",
+      "flag":"img/japan.jpg",
+      "price":1,
+      "code":"JPY(100)",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_JPYKRW"
+    },
+    {
+      "country":"한국 / 원",
+      "flag":"img/korea.jpg",
+      "price":1,
+      "code":"KRW",
+      "url":""
+    },
+    {
+      "country":"쿠웨이트 / 디나르",
+      "flag":"img/Kuwait.jpg",
+      "price":1,
+      "code":"KWD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_KWDKRW"
+    },
+    {
+      "country":"말레이시아 / 링기트",
+      "flag":"img/Malaysia.jpg",
+      "price":1,
+      "code":"MYR",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_MYRKRW"
+    },
+    {
+      "country":"노르웨이 / 크로네",
+      "flag":"img/Norway.jpg",
+      "price":1,
+      "code":"NOK",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_NOKKRW"
+    },
+    {
+      "country":"뉴질랜드 / 뉴질랜드 달러",
+      "flag":"img/New_Zealand.jpg",
+      "price":1,
+      "code":"NZD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_NZDKRW"
+    },
+    {
+      "country":"사우디 / 리얄",
+      "flag":"img/Saudi_Arabia.jpg",
+      "price":1,
+      "code":"SAR",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_SARKRW"
+    },
+    {
+      "country":"스웨덴 / 크로나",
+      "flag":"img/Sweden.jpg",
+      "price":1,
+      "code":"SEK",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_SEKKRW"
+    },
+    {
+      "country":"싱가포르 / 싱가포르 달러",
+      "flag":"img/Singapore.jpg",
+      "price":1,
+      "code":"SGD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_SGDKRW"
+    },
+    {
+      "country":"태국 / 바트",
+      "flag":"img/Thailand.jpg",
+      "price":1,
+      "code":"THB",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_THBKRW"
+    },
+    {
+      "country":"미국 / 달러",
+      "flag":"img/America.jpg",
+      "price":1,
+      "code":"USD",
+      "url":"https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_USDKRW"
+    }
+  ]
+}
