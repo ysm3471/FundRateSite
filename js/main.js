@@ -201,7 +201,7 @@ function makeList(listInfo) {
   tdLink.setAttribute("href",listInfo.url);
   tdLink.setAttribute("target","_blank");
   tdLink.setAttribute("title","클릭하면 네이버증시로 이동");
-  star.setAttribute('src',"../img/Star-default.png");
+  star.setAttribute('src',"img/Star-default.png");
   img.setAttribute("src", listInfo.flag);  
 
   if (bookmarkList.includes(listInfo.code)) {   // 지금 만드는 list가 북마크에 저장한 list일 경우 클라스를 추가함
