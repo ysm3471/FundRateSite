@@ -64,8 +64,11 @@ async function getInfo(url,date) {   // url의 정보를 받아오는 함수
 // 받은 날짜정보를 지정한 데이터포맷으로 만듦
 let dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));
 
+const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+const URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=${dateFormat}&data=AP01`
+
 async function getTodayInfo() {   // 오늘의 정보를 받아오는 함수
-  let info = await getInfo(`https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=${dateFormat}&data=AP01`,"오늘");   // 오늘의 정보를 받아옴
+  let info = await getInfo(URL,"오늘");   // 오늘의 정보를 받아옴
 
   while (info.length === 0) {   // 오늘 받아올 정보가 없을 때, 정보가 있는 날짜까지 거슬러감
     today = new Date(today.setDate(today.getDate() - 1));   // 하루씩 뺌
@@ -73,7 +76,7 @@ async function getTodayInfo() {   // 오늘의 정보를 받아오는 함수
 
     dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));    // 정리된 날짜정보를 다시 지정된 포맷으로 만듦
 
-    info = await getInfo(`https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=${dateFormat}&data=AP01`);    // 정보를 새로 받아옴
+    info = await getInfo(URL);    // 정보를 새로 받아옴
   }
 
   date.textContent = `Date:${dateFormat}`;    // 정보가 있는 날짜를 명시함
@@ -85,7 +88,7 @@ async function getPrevInfo() {    // 어제의 정보를 받아오는 함수
   dateCalc(yesterDate);   // 날짜정보를 갱신함
   dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));    // 갱신한 정보를 지정된 포맷으로 만듦
 
-  let info = await getInfo(`https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=${dateFormat}&data=AP01`,"어제");    // 어제 정보를 받아옴
+  let info = await getInfo(URL,"어제");    // 어제 정보를 받아옴
 
   while (info.length === 0) {   // 어제의 정보가 없을 때, 정보가 있는 날짜까지 거슬러감
     yesterDate = new Date(yesterDate.setDate(yesterDate.getDate() - 1));
@@ -93,7 +96,7 @@ async function getPrevInfo() {    // 어제의 정보를 받아오는 함수
 
     dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));
 
-    info = await getInfo(`https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=${dateFormat}&data=AP01`);
+    info = await getInfo(URL);
   }
 
   return info;
