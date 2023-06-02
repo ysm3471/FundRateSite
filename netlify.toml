@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=20230502&data=AP01"
   status = 200
 
 [[headers]]
