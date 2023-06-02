@@ -6,7 +6,7 @@
   
 [[redirects]]
   from = "/api/*"
-  to = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=20230602&data=AP01:splat"
+  to = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&searchdate=2023-06-02&data=AP01:splat"
   status = 200
   force = true
 
