@@ -1,8 +1,21 @@
 [[redirects]]
   from = "/proxy/*"
-  to = "/index.html/:splat"
+  to = "https://precious-semolina-a73bea.netlify.app/:splat"
   status = 200
+  force = true
+  
+[[redirects]]
+  from = "/api/*"
+  to = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfdC&data=AP01:splat"
+  status = 200
+  force = true
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
+  
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
