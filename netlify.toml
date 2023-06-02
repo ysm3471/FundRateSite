@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/proxy/*"
+  to = "index.html"
+  status = 200
+  force = true
