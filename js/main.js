@@ -67,7 +67,7 @@ let dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("0
 const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
 
 async function getTodayInfo() {   // 오늘의 정보를 받아오는 함수
-  let URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${process.env.AUTH_KEY}&searchdate=${dateFormat}&data=AP01`
+  let URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfd&searchdate=${dateFormat}&data=AP01`
   let info = await getInfo(URL,"오늘");   // 오늘의 정보를 받아옴
 
   while (info.length === 0) {   // 오늘 받아올 정보가 없을 때, 정보가 있는 날짜까지 거슬러감
@@ -76,7 +76,7 @@ async function getTodayInfo() {   // 오늘의 정보를 받아오는 함수
 
     dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));    // 정리된 날짜정보를 다시 지정된 포맷으로 만듦
     
-    URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${process.env.AUTH_KEY}&searchdate=${dateFormat}&data=AP01`
+    URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfd&searchdate=${dateFormat}&data=AP01`
     info = await getInfo(URL);    // 정보를 새로 받아옴
   }
 
@@ -89,7 +89,7 @@ async function getPrevInfo() {    // 어제의 정보를 받아오는 함수
   dateCalc(yesterDate);   // 날짜정보를 갱신함
   dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));    // 갱신한 정보를 지정된 포맷으로 만듦
   
-  let URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${process.env.AUTH_KEY}&searchdate=${dateFormat}&data=AP01`
+  let URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfd&searchdate=${dateFormat}&data=AP01`
   let info = await getInfo(URL,"어제");    // 어제 정보를 받아옴
 
   while (info.length === 0) {   // 어제의 정보가 없을 때, 정보가 있는 날짜까지 거슬러감
@@ -98,7 +98,7 @@ async function getPrevInfo() {    // 어제의 정보를 받아오는 함수
 
     dateFormat = year + "-" + (("00" + month.toString()).slice(-2)) + "-" + (("00" + day.toString()).slice(-2));
 
-    URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=${process.env.AUTH_KEY}&searchdate=${dateFormat}&data=AP01`
+    URL = `${PROXY}/site/program/financial/exchangeJSON?authkey=bsjA5lGPw4KRwVBxyZFnrrHg6WlSZfd&searchdate=${dateFormat}&data=AP01`
     info = await getInfo(URL);
   }
 
